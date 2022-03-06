@@ -5,6 +5,7 @@ int main(){
    //srand() has to run once per program run
     std::srand(std::time(0)); // Seed
 
+    // we will use this prediction to print some random values for you
     char prediction0[]{ "a lot of kinds running in the backyard!" };
     char prediction1[]{ "a lot of empty beer bootles on your work table." };
     char prediction2[]{ "you Partying too much with kids wearing weird clothes." };
@@ -27,7 +28,7 @@ int main(){
 
     while (!end) {
         std::cout << "Oh dear " << name << ", I see ";
-
+        // we are trying to get some random numbers that will get you predictions at random
         size_t rand_num = static_cast<size_t>((std::rand() % 11));
 
         switch (rand_num) { // [0~10]
@@ -67,6 +68,7 @@ int main(){
         default:
             std::cout << ", huum, I don't see anything" << std::endl;
         }
+        // since we are in a while loop , we will ask the user if they want to continue and we will stop when the condiotins turns to false
         std::cout << "Do you want me to try again ? (Y | N) : ";
 
         char go_on;
