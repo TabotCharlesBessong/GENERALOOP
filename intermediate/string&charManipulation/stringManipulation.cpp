@@ -5,7 +5,7 @@
 using namespace std;
 
 int main (){
-      /*
+      
 	//std::strlen : Find the length of a string
     // real arrays and those decayed into pointers
     const char message1 [] {"The sky is blue."};
@@ -25,7 +25,7 @@ int main (){
 	
 	//Prints size of pointer
     std::cout << "sizeof(message2) : " << sizeof(message2) << std::endl;
-    */
+    
 
 
    //std::strcmp - signature : int strcmp( const char *lhs, const char *rhs );
@@ -88,7 +88,7 @@ int main (){
 	//Returns : Negative value if lhs appears before rhs in lexicographical order.
     //Zero if lhs and rhs compare equal, or if count is zero.
     //Positive value if lhs appears after rhs in lexicographical order. 
-    /*
+    
     //Print out the comparison
 
     const char* string_data1{ "Alabama" };
@@ -117,13 +117,13 @@ int main (){
     
     std::cout << "std::strncmp (" << string_data1 << "," << string_data2 << "," << n << ") : " 
               << std::strncmp(string_data1,string_data2,n) << std::endl;
-    */
+    
 
 
 
     //Find the first occurrence of a character 
 	//CODE STOLEN FROM THE DOCS : 
-    /*
+    
     std::cout << std::endl;
     std::cout << "std::strchr : " << std::endl;
 	//doc : https://en.cppreference.com/w/cpp/string/byte/strchr
@@ -146,11 +146,11 @@ int main (){
 		++iterations;
 	}
 	std::cout << "iterations : " << iterations << std::endl;
-    */
+    
 
 
     //A lesser version that will loop 25 times
-    /*
+    
 	//Find the first occurrence of a character 
 	//CODE STOLEN FROM THE DOCS : 
 	std::cout << std::endl;
@@ -174,7 +174,7 @@ int main (){
 		++iterations;
 	}
 	std::cout << "iterations : " << iterations << std::endl;
-    */
+    
 
 
 	//Find last occurence
