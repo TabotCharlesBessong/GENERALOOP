@@ -1,8 +1,5 @@
-
-#include <iostream>
-using namespace std;
-
-const double PI {3.1416};
+// #ifndef CYLINDER_H
+// #define CYLINDER_H
 
 class Cylinder {
   // Member variable 
@@ -45,10 +42,4 @@ class Cylinder {
     }
 };
 
-int main (){
-  Cylinder cylinder1(10,10);
-  cout<<"Volume : "<<cylinder1.volume()<< endl;
-  cylinder1.setBaseRadius(100);
-  cout<<"Base Radius: "<<cylinder1.getBaseRadius()<<endl;
-  cout<<"New Volume : "<<cylinder1.volume()<< endl;
-}
+// #endif
