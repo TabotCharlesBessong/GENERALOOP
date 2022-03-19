@@ -4,7 +4,7 @@
 class Dog{
     public : 
         Dog() = default;
-        Dog(std::string_view name_param, std::string_view breed_param, int  age_param);
+        Dog(std::string name_param, std::string breed_param, int  age_param);
         ~Dog();
 
         void print_info(){
@@ -32,12 +32,12 @@ class Dog{
         */
 
        //Chained calls using references
-        Dog& set_dog_name(std::string_view name){
+        Dog& set_dog_name(std::string name){
             //name = name; // This does nothing
             this->name = name;
             return *this;
         }
-        Dog& set_dog_breed(std::string_view breed){
+        Dog& set_dog_breed(std::string breed){
             this->breed = breed;
             return *this;
         }
@@ -52,7 +52,7 @@ class Dog{
         std::string breed;
         int * p_age{nullptr};
 };
-Dog::Dog(std::string_view name_param, std::string_view breed_param, int  age_param){
+Dog::Dog(std::string name_param, std::string breed_param, int  age_param){
     name = name_param;
     breed = breed_param;
     p_age = new int;
