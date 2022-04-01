@@ -39,6 +39,37 @@ class Person{
       cout<<"\n"<<"Height: "<<height<<endl;
     }
 };
+
+class Phone {
+  private:
+    string name;
+    float RAM;
+    float Processor;
+    float Battery;
+
+  public:
+    Phone(string nameP , float RAMP , float ProcessorP , float BatteryP){
+      name = nameP;
+      RAM = RAMP;
+      Processor = ProcessorP;
+      Battery = BatteryP;
+    }
+
+    Phone(Phone &tecno){
+      name = tecno.name;
+      RAM = tecno.RAM;
+      Processor = tecno.Processor;
+      Battery = tecno.Battery;
+    }
+
+    void getProperties(){
+      cout<<"\n";
+      cout<<"The phone's name is: "<<name<<endl;
+      cout<<"The phone's RAM is: "<<RAM<<endl;
+      cout<<"The phone's Proccesor speed is: "<<Processor<<endl;
+      cout<<"The phone's Battery life span is: "<<Battery<<endl;
+    }
+};
 // constructors in cpp oop
 
 int main(){
@@ -46,5 +77,10 @@ int main(){
   per.getData();
   per1.getData();
   per3.getData();
+
+  cout<<endl;
+  Phone tecno("Spark 8",4,2.67,8090.76),itel(tecno);
+  tecno.getProperties();
+  itel.getProperties();
   cout<<"Hello world"<<endl;
 }
