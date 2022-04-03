@@ -5,11 +5,9 @@
 #include <string>
 using namespace std;
 
-class Customer{
+class Customer{ // by making the function of a class pure virtual function , the class  becomes an abstract class 
   public:
-    virtual void give(){
-      cout<<"Bun"<<endl;
-    }
+    virtual void give() = 0;
 };
 
 class Boy : public Customer{
@@ -26,7 +24,9 @@ class Girl : public Customer{
     }
 };
 
+
 int main(){
+  // This is polymorphism , the ability of a class to exist in more than one form 
   Boy b1;
   Girl g1;
 
